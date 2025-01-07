@@ -41,5 +41,36 @@ namespace ListaEnlazaSimple
                 actual = actual.Siguiente;
             }
         }
+
+        public void eliminar(int num)
+        {
+            Nodo actual = primero;
+            Nodo anterior = null;
+            bool encontrado = false;
+
+            while(actual != null)
+            {
+                if(actual.Numero == num)
+                {
+                    if(actual == primero)
+                    {
+                        primero = primero.Siguiente;
+                    }else if(actual == ultimo)
+                    {
+                        anterior.Siguiente = null;
+                        ultimo = anterior;
+                    }
+                    else
+                    {
+                        anterior.Siguiente = actual.Siguiente;
+                    }
+                    encontrado = true;
+                }
+                anterior = actual;
+                actual = actual.Siguiente;
+            }
+            if (encontrado == false)
+                MessageBox.Show($"El número {num} no esta en la lista");
+        }
     }
 }
