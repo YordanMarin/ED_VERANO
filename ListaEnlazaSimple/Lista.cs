@@ -72,5 +72,64 @@ namespace ListaEnlazaSimple
             if (encontrado == false)
                 MessageBox.Show($"El número {num} no esta en la lista");
         }
+
+        public bool buscar(int num)
+        {
+            Nodo actual = primero;
+
+            while(actual != null)
+            {
+                if(actual.Numero == num)
+                {
+                    return true;
+                }
+                actual = actual.Siguiente;
+            }
+            return false;
+        }
+
+        public void ascendente()
+        {
+            Nodo actual = primero;
+
+            while(actual != null)
+            {
+                Nodo sig = actual.Siguiente;
+
+                while(sig != null)
+                {
+                    if(actual.Numero > sig.Numero)
+                    {
+                        int temp = actual.Numero;
+                        actual.Numero = sig.Numero;
+                        sig.Numero = temp;
+                    }
+                    sig = sig.Siguiente;
+                }
+                actual = actual.Siguiente;
+            }
+        }
+
+        public void descendente()
+        {
+            Nodo actual = primero;
+
+            while (actual != null)
+            {
+                Nodo sig = actual.Siguiente;
+
+                while (sig != null)
+                {
+                    if (actual.Numero < sig.Numero)
+                    {
+                        int temp = actual.Numero;
+                        actual.Numero = sig.Numero;
+                        sig.Numero = temp;
+                    }
+                    sig = sig.Siguiente;
+                }
+                actual = actual.Siguiente;
+            }
+        }
     }
 }

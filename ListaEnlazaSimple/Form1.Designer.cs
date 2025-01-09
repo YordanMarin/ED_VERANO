@@ -34,6 +34,9 @@
             this.btnInsertar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.listBoxNumeros = new System.Windows.Forms.ListBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnAscendente = new System.Windows.Forms.Button();
+            this.btnDescendente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -84,6 +87,7 @@
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // listBoxNumeros
             // 
@@ -92,14 +96,50 @@
             this.listBoxNumeros.ItemHeight = 20;
             this.listBoxNumeros.Location = new System.Drawing.Point(228, 148);
             this.listBoxNumeros.Name = "listBoxNumeros";
-            this.listBoxNumeros.Size = new System.Drawing.Size(231, 264);
+            this.listBoxNumeros.Size = new System.Drawing.Size(231, 284);
             this.listBoxNumeros.TabIndex = 5;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(81, 266);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(123, 35);
+            this.btnBuscar.TabIndex = 6;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // btnAscendente
+            // 
+            this.btnAscendente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAscendente.Location = new System.Drawing.Point(81, 326);
+            this.btnAscendente.Name = "btnAscendente";
+            this.btnAscendente.Size = new System.Drawing.Size(123, 35);
+            this.btnAscendente.TabIndex = 7;
+            this.btnAscendente.Text = "Ascendente";
+            this.btnAscendente.UseVisualStyleBackColor = true;
+            this.btnAscendente.Click += new System.EventHandler(this.btnAscendente_Click);
+            // 
+            // btnDescendente
+            // 
+            this.btnDescendente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDescendente.Location = new System.Drawing.Point(81, 383);
+            this.btnDescendente.Name = "btnDescendente";
+            this.btnDescendente.Size = new System.Drawing.Size(123, 35);
+            this.btnDescendente.TabIndex = 8;
+            this.btnDescendente.Text = "Descendente";
+            this.btnDescendente.UseVisualStyleBackColor = true;
+            this.btnDescendente.Click += new System.EventHandler(this.btnDescendente_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 527);
+            this.Controls.Add(this.btnDescendente);
+            this.Controls.Add(this.btnAscendente);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.listBoxNumeros);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnInsertar);
@@ -121,6 +161,9 @@
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.ListBox listBoxNumeros;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnAscendente;
+        private System.Windows.Forms.Button btnDescendente;
     }
 }
 
