@@ -27,7 +27,11 @@ namespace ListaDoble
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            l.buscar(int.Parse(textNumero.Text));
+            if(l.buscar(int.Parse(textNumero.Text)) != null)
+            {
+                MessageBox.Show("Existe!");
+            }else
+                MessageBox.Show("No Existe!");
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
