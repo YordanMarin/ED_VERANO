@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cola", "Cola\Cola.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbolBinario", "ArbolBinario\ArbolBinario.csproj", "{CAC37764-2E17-4F4D-8FBC-DB2FFAF49B84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbolBinarioBusqueda", "ArbolBinarioBusqueda\ArbolBinarioBusqueda.csproj", "{5151A5DA-087C-4533-87D4-45D6AC7A2656}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CAC37764-2E17-4F4D-8FBC-DB2FFAF49B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAC37764-2E17-4F4D-8FBC-DB2FFAF49B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAC37764-2E17-4F4D-8FBC-DB2FFAF49B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5151A5DA-087C-4533-87D4-45D6AC7A2656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5151A5DA-087C-4533-87D4-45D6AC7A2656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5151A5DA-087C-4533-87D4-45D6AC7A2656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5151A5DA-087C-4533-87D4-45D6AC7A2656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
